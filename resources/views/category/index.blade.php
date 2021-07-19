@@ -24,7 +24,7 @@
             <td><a href="{{ url('category/' . $row->cat_id . '/edit') }}" class="btn btn-primary btn-sm">Edit</a>
             
             
-            <!-- <form action="{{ url('/category/' . $row->cat_id) }}" method="POST"> -->
+            <form action="{{ url('/category/' . $row->cat_id) }}" method="POST">
 
             <input name="_method" type="hidden" value="DELETE"> 
             @csrf
